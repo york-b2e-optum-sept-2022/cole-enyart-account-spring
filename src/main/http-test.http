@@ -1,0 +1,23 @@
+###
+GET http://localhost:8080/api/account
+
+###
+POST http://localhost:8080/api/account
+Content-Type: application/json
+
+{
+  "email": "test@test.com",
+  "password": "123"
+}
+
+###
+PUT http://localhost:8080/api/account?id=1
+Content-Type: application/json
+
+{
+  "email": "test@test.com",
+  "password": "789"
+}
+
+###
+DELETE http://localhost:8080/api/account/1
